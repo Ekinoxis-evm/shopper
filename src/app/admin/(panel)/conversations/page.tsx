@@ -60,7 +60,7 @@ export default async function ConversationsPage({
         ].map((f) => (
           <a
             key={f.value ?? "all"}
-            href={f.value ? `/conversations?status=${f.value}` : "/conversations"}
+            href={f.value ? `/admin/conversations?status=${f.value}` : "/admin/conversations"}
             className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
               status === f.value || (!status && !f.value)
                 ? "bg-primary text-primary-foreground border-primary"

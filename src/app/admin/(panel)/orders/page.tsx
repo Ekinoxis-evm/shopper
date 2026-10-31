@@ -53,7 +53,7 @@ export default async function OrdersPage({
         ].map((f) => (
           <a
             key={f.value ?? "all"}
-            href={f.value ? `/orders?status=${f.value}` : "/orders"}
+            href={f.value ? `/admin/orders?status=${f.value}` : "/admin/orders"}
             className={`px-3 py-1.5 rounded-full text-xs font-medium border transition-colors ${
               status === f.value || (!status && !f.value)
                 ? "bg-primary text-primary-foreground border-primary"

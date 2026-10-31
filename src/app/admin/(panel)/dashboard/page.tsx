@@ -132,7 +132,7 @@ export default async function DashboardPage() {
       <Card>
         <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle className="text-base">Últimas órdenes</CardTitle>
-          <a href="/orders" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
+          <a href="/admin/orders" className="text-xs text-muted-foreground hover:text-foreground transition-colors">
             Ver todas →
           </a>
         </CardHeader>
@@ -177,7 +177,7 @@ export default async function DashboardPage() {
               </p>
               <p className="text-xs text-muted-foreground">El cliente ya pagó — acción requerida</p>
             </div>
-            <a href="/orders?status=pending_dropi" className="text-xs font-medium text-destructive hover:underline shrink-0">
+            <a href="/admin/orders?status=pending_dropi" className="text-xs font-medium text-destructive hover:underline shrink-0">
               Ver órdenes →
             </a>
           </CardContent>
