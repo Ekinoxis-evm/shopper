@@ -37,6 +37,9 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     try {
       const saved = localStorage.getItem("shopper-cart");
+      // Hydrate from localStorage after mount (reading it during render would
+      // cause an SSR hydration mismatch).
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       if (saved) setEntries(JSON.parse(saved));
     } catch {}
   }, []);
