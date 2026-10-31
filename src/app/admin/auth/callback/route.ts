@@ -4,7 +4,9 @@ import { createClient } from "@/lib/supabase/server";
 export async function GET(request: NextRequest) {
   const { searchParams, origin } = new URL(request.url);
   const code = searchParams.get("code");
-  const next = searchParams.get("next") ?? "/admin/dashboard";
+  // Only same-site admin paths: "@evil.com", "//evil.com" or "https://…" must never become the redirect target.
+  const requested = searchParams.get("next") ?? "";
+  const next = /^\/admin(\/[\w\-/]*)?$/.test(requested) ? requested : "/admin/dashboard";
 
   if (!code) {
     return NextResponse.redirect(`${origin}/admin/login?error=missing_code`);
