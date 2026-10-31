@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#96d59d",
+                        "on-tertiary-fixed-variant": "#7f2a21",
+                        "on-secondary-container": "#89c78f",
+                        "on-tertiary-fixed": "#410001",
+                        "surface-variant": "#353535",
+                        "tertiary-container": "#ff8b7c",
+                        "surface-dim": "#131313",
+                        "outline-variant": "#3d4a3d",
+                        "on-tertiary": "#60130d",
+                        "background": "#131313",
+                        "outline": "#869585",
+                        "on-secondary-fixed-variant": "#145126",
+                        "on-primary-fixed-variant": "#005321",
+                        "inverse-primary": "#006e2f",
+                        "tertiary-fixed-dim": "#ffb4a9",
+                        "primary": "#4be277",
+                        "tertiary": "#ffb5ab",
+                        "surface-container-high": "#2a2a2a",
+                        "surface-container-low": "#1b1b1b",
+                        "secondary-container": "#175428",
+                        "error": "#ffb4ab",
+                        "secondary": "#96d59d",
+                        "error-container": "#93000a",
+                        "surface-container-lowest": "#0e0e0e",
+                        "primary-container": "#22c55e",
+                        "on-surface-variant": "#bccbb9",
+                        "surface-container-highest": "#353535",
+                        "on-background": "#e2e2e2",
+                        "surface": "#131313",
+                        "on-surface": "#e2e2e2",
+                        "inverse-on-surface": "#303030",
+                        "tertiary-fixed": "#ffdad5",
+                        "surface-container": "#1f1f1f",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#b2f2b7",
+                        "on-primary-fixed": "#002109",
+                        "primary-fixed": "#6bff8f",
+                        "on-tertiary-container": "#76231b",
+                        "on-primary": "#003915",
+                        "inverse-surface": "#e2e2e2",
+                        "on-secondary": "#003915",
+                        "on-secondary-fixed": "#002109",
+                        "surface-tint": "#4ae176",
+                        "primary-fixed-dim": "#4ae176",
+                        "on-error-container": "#ffdad6",
+                        "on-primary-container": "#004b1e",
+                        "surface-bright": "#393939"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Plus Jakarta Sans"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; background-color: #131313; color: #e2e2e2; }
+        .font-plus-jakarta-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl transition-all duration-300">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#e2e2e2] font-plus-jakarta-sans">OBSIDIAN</div>
+<div class="hidden md:flex gap-10">
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-colors font-plus-jakarta-sans tracking-tight" href="#">Ropa</a>
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-colors font-plus-jakarta-sans tracking-tight" href="#">Hogar</a>
+<a class="text-green-500 font-bold border-b-2 border-green-500 pb-1 font-plus-jakarta-sans tracking-tight" href="#">Mascotas</a>
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-colors font-plus-jakarta-sans tracking-tight" href="#">Cuidado Personal</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-80 transition-all duration-300 scale-95 duration-200">
+<span class="material-symbols-outlined text-on-background">shopping_bag</span>
+</button>
+<button class="hover:opacity-80 transition-all duration-300 scale-95 duration-200">
+<span class="material-symbols-outlined text-on-background">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Editorial Hero Section -->
+<section class="px-12 mb-32 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-7">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-4 block">Colección Canina 2024</span>
+<h1 class="text-7xl md:text-8xl font-headline font-extrabold tracking-tighter leading-none mb-8">
+                        MASCOTAS<br/><span class="text-surface-container-highest">PURISTAS.</span>
+</h1>
+<p class="text-on-surface-variant max-w-md text-lg leading-relaxed">
+                        Redefiniendo el confort animal a través de la arquitectura minimalista y materiales de grado aeroespacial.
+                    </p>
+</div>
+<div class="md:col-span-5 h-[500px] overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Close-up of a sleek black greyhound wearing a designer emerald green leather collar against a dark charcoal minimalist studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCstiPl4yyGyd9qF7zrGhaJV9xoEYatK1RuEHWUlYlhgeYsYUuEb6wHh3jlUp9-MXqdLdhWE608f5CVY7EikGl6SHDM9JfVfLHEzjgL4Z-h6K_mlpz976LoOMwylOOS7XRlFMJmz90-UZdhFl3OxRkMwMgF3-jUecZStdoheQf6s9rQtXl3KVNcdLhLfNvc1Jy_516A-dqEjb8JPXSHR0xTugN2xBZ5tUEQew_EUeo2l1c6wTdgmJ024x89GBWippQD_Pl6-OthSY8"/>
+</div>
+</div>
+</section>
+<!-- Featured Product Bento Grid -->
+<section class="px-12 mb-32 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-auto md:h-[800px]">
+<!-- Main Highlight -->
+<div class="md:col-span-2 md:row-span-2 bg-surface-container-low p-12 flex flex-col justify-between group cursor-pointer overflow-hidden relative">
+<div class="z-10">
+<h2 class="text-4xl font-headline font-bold mb-4">La Cama Obscura</h2>
+<p class="text-on-surface-variant max-w-xs">Espuma con memoria encapsulada en lino balístico de alta densidad.</p>
+</div>
+<div class="flex justify-between items-end z-10">
+<span class="text-primary text-2xl font-bold font-headline">€420.00</span>
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">add</span>
+</div>
+</div>
+<div class="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="Luxury minimalist dog bed in dark grey fabric positioned in a modern concrete architectural space with dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyh4Dj79IFkYKgLHq0wmKUfgn0o5yglA2mhi59xWoa0HOvKJwc8ckS8aIzc8DWqfkHLoO504JUrwCjhZW5lrPppkae0rP42TkM4ibTml6SqVLFLLWi-oUeofEY442OglTZMwa9nrg-FjysXXglpRMV4r2klb73pwtYvODI8j3sI1PCZCfSi5M1njfsLHfz6jFt-eMHcQwPDn-DY9jMryMz79PX6iTaSKZnI6BdB42igRoSiCXEsYGMgAgFVIB0XsqLyHNW-_NdpVk"/>
+</div>
+</div>
+<!-- Secondary Item -->
+<div class="md:col-span-2 md:row-span-1 bg-surface-container p-8 flex flex-col md:flex-row gap-8 items-center group cursor-pointer">
+<div class="flex-1">
+<span class="text-primary text-[10px] tracking-widest font-label uppercase">Edición Limitada</span>
+<h3 class="text-2xl font-headline font-bold mt-2 mb-2">Arnés Obsidian V.1</h3>
+<p class="text-sm text-on-surface-variant mb-6">Titanio y fibra de carbono.</p>
+<button class="bg-primary-container text-on-primary-container py-3 px-6 rounded text-xs font-bold uppercase tracking-wider group-hover:bg-primary transition-colors">Explorar</button>
+</div>
+<div class="w-48 h-48 rounded-full bg-surface-container-highest overflow-hidden p-2">
+<img class="w-full h-full object-cover rounded-full grayscale" data-alt="Sophisticated black tactical dog harness with metallic buckles on a golden retriever in soft moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDK_TzsX7sGUf0ZcYnVgmKvqcO6k2gCHp52ccpeyafoFtyEirOBKauOnjVU7T3x8bV66LR-WBF7Ppb8VJeVxiUJLLomDpayPfq4w5BBirlSRjXCsi1SUabGg30juyR8G1fjv9w5ke14L58KKUsQUzmfC3M7iYc-CWwfnYasr-S1U3Myq_9NGMtMdjIsgGxpbGGi44rzibCztD_tlYEA6dS5RmPwuuUvsEfXcEDjUCqVDIgMJmXPVfnlgUnTdtYPuLEVaIQjcDx6vdg"/>
+</div>
+</div>
+<!-- Tertiary Item -->
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-high p-8 flex flex-col justify-end group cursor-pointer hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-primary mb-4">restaurant</span>
+<h3 class="text-xl font-headline font-bold">Cuencos Cerámicos</h3>
+<p class="text-xs text-on-surface-variant mt-2">Mármol negro tallado a mano.</p>
+</div>
+<!-- Quaternary Item -->
+<div class="md:col-span-1 md:row-span-1 bg-primary-container p-8 flex flex-col justify-end group cursor-pointer hover:bg-primary transition-colors">
+<span class="material-symbols-outlined text-on-primary-container mb-4">pets</span>
+<h3 class="text-xl font-headline font-bold text-on-primary-container">Correas de Cuero</h3>
+<p class="text-xs text-on-primary-container/70 mt-2">Cuero curtido vegetalmente.</p>
+</div>
+</div>
+</section>
+<!-- Product Grid Editorial Header -->
+<section class="px-12 mb-16 max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-baseline gap-4">
+<h2 class="text-5xl font-headline font-bold tracking-tight">CUIDADO<br/>INTEGRAL.</h2>
+<div class="flex gap-8 text-[10px] font-label uppercase tracking-widest text-on-surface-variant">
+<span class="text-primary cursor-pointer">Ver Todos</span>
+<span class="hover:text-on-surface cursor-pointer">Descanso</span>
+<span class="hover:text-on-surface cursor-pointer">Paseo</span>
+<span class="hover:text-on-surface cursor-pointer">Alimentación</span>
+</div>
+</section>
+<!-- Product Cards Listing -->
+<section class="px-12 max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Card 1 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Artistic portrait of a small dog in a dark environment with light hitting the textures of its fur and its luxury collar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2iRLW06M6YVxmvdHXPoh8W9Nn4kw15hN5nN77YBcyxt0lBbvR6BCjO1SsEAjUFlr5Ufqmx6_VuApAth-77eHIMMYkh4AXFf0JrAjzTJndKjrqJPOVWJ6f3gjm_NEpjPaTrGKEcxFdgZZMWd53xRZXZpfY1zOHxRz9VqSCmyyEKGpdkrezyKGV_f79tiZ2PQeRl_EnJRMD66VXe16PBG_5NFDbOo2TV1zRNkm_BlVuXiQxfFGPQ-q9l6wqqeVnCTsDld4BSxsDcSk"/>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-10 h-10 bg-on-background text-background rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline font-bold text-lg">Collar Emerald Noir</h4>
+<p class="text-on-surface-variant text-sm">Cuero italiano y latón macizo</p>
+</div>
+<span class="font-bold text-primary">€85</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Elegant glass container with gourmet organic pet treats on a dark stone surface with atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoWxZJ2YEjNZovApJcwjKVzDtHeTUWsZCe5czLvotL3N1TMuPzKBcqbRoamY1l5Z_d0Ont6cW7ekV_jB5ItaEB9CjSi1fcwPQk3STbjVg3WfI3gjfCuupuBnI0P4v4bs7vxzI0Zv3EnEIssZNIroL3fvGgomUko7jSjEbIhN9V6eCLgk04Mrpd3KxdtPmirlPrl5_evGf6bzET_W4j6nVsD28crESayZOPGTVFspTu0yMMWb4JaBZuSARfIpT9jixm1ewcNHWBPiM"/>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-10 h-10 bg-on-background text-background rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline font-bold text-lg">Set Gourmet Organic</h4>
+<p class="text-on-surface-variant text-sm">Tratamiento hipoalergénico artesanal</p>
+</div>
+<span class="font-bold text-primary">€45</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist design pet carrier bag made of dark tech-fabric against a clean grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbyNEzEUvV43WOZ45BOqbGRtiJ15ZJOwJARKFajzgpXL-CAWOWtujT5fCjGk5Fq5k6nUaAL34Nar6T3fgxjdSDs-aZJcbzYMEVgY-_qRpEbtZsqZIqDIu8B77B-aY_ZYtYTREXqyDZNAa8x891KC5WSSF55KswF1pBRHnlNgIAqwd_w-IQgnIDwE_sIo9Xpy9wtOLVivyL1VwXpsdpewfeNj9nivv03jOfzD_gUAlVEYtdfb9lwSaOYe0pSuqiJTwd_3e8VnctxQo"/>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<button class="w-10 h-10 bg-on-background text-background rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h4 class="font-headline font-bold text-lg">Transportín Aero</h4>
+<p class="text-on-surface-variant text-sm">Estructura ligera autoportante</p>
+</div>
+<span class="font-bold text-primary">€290</span>
+</div>
+</div>
+</section>
+<!-- CTA Experience Section -->
+<section class="mt-32 mx-12 bg-surface-container-low p-20 flex flex-col items-center text-center rounded-xl overflow-hidden relative">
+<div class="z-10">
+<h2 class="text-4xl md:text-5xl font-headline font-extrabold tracking-tighter mb-6">ÚNETE AL CÍRCULO OBSIDIAN.</h2>
+<p class="text-on-surface-variant max-w-lg mb-10 text-lg">Acceso anticipado a lanzamientos limitados y servicios de curaduría personalizada para tu compañero.</p>
+<div class="flex flex-col md:flex-row gap-4 w-full max-w-md">
+<input class="flex-1 bg-surface-container-highest border-none rounded p-4 text-sm focus:ring-1 focus:ring-primary/40 font-label" placeholder="TU EMAIL" type="email"/>
+<button class="bg-primary text-on-primary py-4 px-8 rounded font-bold text-xs uppercase tracking-[0.1em] hover:opacity-90 transition-opacity">Suscribirse</button>
+</div>
+</div>
+<!-- Ambient Glow -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 blur-[120px] rounded-full pointer-events-none"></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1b1b] w-full py-20 px-12 border-t border-outline-variant/10">
+<div class="flex flex-col md:flex-row justify-between items-center w-full max-w-screen-2xl mx-auto gap-12">
+<div class="flex flex-col items-center md:items-start">
+<div class="text-lg font-black text-[#e2e2e2] font-plus-jakarta-sans mb-4">OBSIDIAN CURATOR</div>
+<p class="font-manrope text-[10px] uppercase tracking-[0.05em] text-[#e2e2e2]/40">© 2024 OBSIDIAN CURATOR. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex gap-12">
+<a class="font-manrope text-[10px] uppercase tracking-[0.05em] text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Privacy</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.05em] text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Terms</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.05em] text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Shipping</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.05em] text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-[#e2e2e2]/40 cursor-pointer hover:text-green-500 transition-colors">language</span>
+<span class="material-symbols-outlined text-[#e2e2e2]/40 cursor-pointer hover:text-green-500 transition-colors">public</span>
+</div>
+</div>
+</footer>
+</body></html>

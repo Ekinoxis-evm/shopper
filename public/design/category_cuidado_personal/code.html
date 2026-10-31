@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#96d59d",
+                    "on-tertiary-fixed-variant": "#7f2a21",
+                    "on-secondary-container": "#89c78f",
+                    "on-tertiary-fixed": "#410001",
+                    "surface-variant": "#353535",
+                    "tertiary-container": "#ff8b7c",
+                    "surface-dim": "#131313",
+                    "outline-variant": "#3d4a3d",
+                    "on-tertiary": "#60130d",
+                    "background": "#131313",
+                    "outline": "#869585",
+                    "on-secondary-fixed-variant": "#145126",
+                    "on-primary-fixed-variant": "#005321",
+                    "inverse-primary": "#006e2f",
+                    "tertiary-fixed-dim": "#ffb4a9",
+                    "primary": "#4be277",
+                    "tertiary": "#ffb5ab",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-container-low": "#1b1b1b",
+                    "secondary-container": "#175428",
+                    "error": "#ffb4ab",
+                    "secondary": "#96d59d",
+                    "error-container": "#93000a",
+                    "surface-container-lowest": "#0e0e0e",
+                    "primary-container": "#22c55e",
+                    "on-surface-variant": "#bccbb9",
+                    "surface-container-highest": "#353535",
+                    "on-background": "#e2e2e2",
+                    "surface": "#131313",
+                    "on-surface": "#e2e2e2",
+                    "inverse-on-surface": "#303030",
+                    "tertiary-fixed": "#ffdad5",
+                    "surface-container": "#1f1f1f",
+                    "on-error": "#690005",
+                    "secondary-fixed": "#b2f2b7",
+                    "on-primary-fixed": "#002109",
+                    "primary-fixed": "#6bff8f",
+                    "on-tertiary-container": "#76231b",
+                    "on-primary": "#003915",
+                    "inverse-surface": "#e2e2e2",
+                    "on-secondary": "#003915",
+                    "on-secondary-fixed": "#002109",
+                    "surface-tint": "#4ae176",
+                    "primary-fixed-dim": "#4ae176",
+                    "on-error-container": "#ffdad6",
+                    "on-primary-container": "#004b1e",
+                    "surface-bright": "#393939"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.8px",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .curator-glass {
+            background: rgba(19, 19, 19, 0.6);
+            backdrop-filter: blur(24px);
+        }
+        .ambient-shadow {
+            box-shadow: 0 40px 60px -15px rgba(0, 83, 33, 0.08);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #4be277 0%, #22c55e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-gradient {
+            background: linear-gradient(135deg, #4be277 0%, #22c55e 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl">
+<nav class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto font-headline tracking-tight">
+<div class="text-2xl font-bold tracking-tighter text-[#e2e2e2]">OBSIDIAN</div>
+<div class="hidden md:flex items-center space-x-10">
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-colors" href="#">Ropa</a>
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-colors" href="#">Hogar</a>
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-colors" href="#">Mascotas</a>
+<a class="text-green-500 font-bold border-b-2 border-green-500 pb-1" href="#">Cuidado Personal</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="hover:opacity-80 transition-all duration-300 active:scale-95 text-[#e2e2e2]">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button class="hover:opacity-80 transition-all duration-300 active:scale-95 text-[#e2e2e2]">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</nav>
+</header>
+<main class="pt-32">
+<!-- Hero Editorial Section -->
+<section class="px-12 mb-32 grid grid-cols-12 gap-8 items-end">
+<div class="col-span-12 lg:col-span-7">
+<span class="font-label text-[10px] uppercase tracking-[0.3em] text-primary mb-6 block">Editorial Series 01</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter mb-8 leading-[0.9]">
+                    Pureza <br/><span class="text-surface-variant">Obsidiana.</span>
+</h1>
+<p class="font-body text-on-surface-variant max-w-md text-lg leading-relaxed mb-12">
+                    Una curaduría de fórmulas botánicas avanzadas y diseño minimalista. El ritual de cuidado elevado a una expresión de arte.
+                </p>
+<button class="btn-gradient px-10 py-5 rounded-none font-headline font-bold text-on-primary-fixed flex items-center gap-3 hover:opacity-90 transition-all group">
+                    EXPLORAR COLECCIÓN
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+<div class="col-span-12 lg:col-span-5 relative aspect-[4/5] bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover grayscale contrast-125 opacity-80" data-alt="Premium black glass skincare bottles on a dark textured stone surface with dramatic side lighting and green shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3YPpzIKUbx9UwFAslF3msDs8-eyrs6HckX7aJpMTjSQ_fjqcvlQSb2iE4TI3coQCyCqP4AwW7O5uU1broUjzv1L3sXnD0FmkMYyjXY298k2k8CNWbxeSHa2ndytU29eC-ca2IcS9NlXqLQc2RvnyuyNNnW60-n5I89_5MjuU1yuhMmU8jvh0KoOvNn2wLJ6_6-BCgWQOWEFKmgpgogsVVoQZlm8F9F-RpLbhpR_OjqgUN0eo2U2PSTDY53roVM1JM60vYmJbcwiM"/>
+<div class="absolute bottom-8 right-8 text-right">
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Grooming Kit No. 4</p>
+<p class="font-headline font-bold text-2xl">L'EAU NOIRE</p>
+</div>
+</div>
+</section>
+<!-- Filter & Layout Control -->
+<section class="px-12 mb-16 flex justify-between items-baseline border-b border-outline-variant/10 pb-4">
+<div class="flex gap-8">
+<button class="font-label text-[11px] uppercase tracking-widest text-primary border-b border-primary">Todos</button>
+<button class="font-label text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors">Fragancias</button>
+<button class="font-label text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors">Rostro</button>
+<button class="font-label text-[11px] uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors">Cuerpo</button>
+</div>
+<p class="font-label text-[11px] uppercase tracking-widest text-on-surface-variant">12 PRODUCTOS</p>
+</section>
+<!-- Product Grid (Asymmetric Bento Inspired) -->
+<section class="px-12 grid grid-cols-1 md:grid-cols-3 gap-y-24 gap-x-12 mb-40">
+<!-- Product 1 -->
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sleek black matte bottle of luxury facial serum on a dark obsidian base with soft atmospheric green glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbTA52WI0I6CIyblyeSXYiLl_L8O6t3D8xLIndxHwdBkVz_ATM8ku9yB20XpiXLUG52mjzS3Qbz-zETlPvf1CtbEuFC1YzPYAnGhR4E2xTyMEKlbBFM0osz7gHDpd1-xnu0RkUGjd1AQ9gu_lnXpqQLqYb1V_-Z4Zu63YdPxljr1Xi87JdLMXYaJamfRyBWWuJAnUg3ZhU9WDVJTeOmJUzKHw7e5cztC-OUIzD6gGI-OoyVtS1nlvN7dnfLmbwTBN7hLtj97ijwHs"/>
+<div class="absolute inset-0 bg-primary-container/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<button class="absolute bottom-0 left-0 right-0 py-4 bg-primary text-on-primary-fixed font-headline font-bold translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        AÑADIR A BOLSA
+                    </button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-xl tracking-tight mb-1">Serum Renovador de Noche</h3>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Tratamiento Intensivo</p>
+</div>
+<span class="font-headline font-medium text-lg">$120.00</span>
+</div>
+</div>
+<!-- Product 2 (Shifted for Asymmetry) -->
+<div class="group md:mt-24">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Minimalist candle in a heavy black ceramic vessel with a single flame in a dark moody room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-9rV4hyKQV_vhmlfq8ll3gwfCkkW2HgFCdaP_VWHd6k98oOGDdHgkKGGhCX036LkFIY5BuDEGskwvNMYp4I1HShZUBlRz-qudNNbwVb_PX5vUdVTq8LkSodl-7p3lI_3LOTyt3AIoWQ3yGw58VDhE8f2F9kscHJyhFoX4U2U362kjQPVF_0FqAK8HwWVCUkjif87KUNhSOCNa1aLeF9UbGsCDIN6tE3YkgEtnnGQQX12OURB5ikRZ201gtaYOkeuZ4Ak1Yeor5A0"/>
+<div class="absolute inset-0 bg-primary-container/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<button class="absolute bottom-0 left-0 right-0 py-4 bg-primary text-on-primary-fixed font-headline font-bold translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        AÑADIR A BOLSA
+                    </button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-xl tracking-tight mb-1">Vela Aromática 'Sombra'</h3>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Hogar &amp; Bienestar</p>
+</div>
+<span class="font-headline font-medium text-lg">$65.00</span>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Heavy glass bottle of deep amber perfume on a reflective black surface with emerald light accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI3HfhQOT17Jj1dUdaVkBn_z_JrLqytPK78o2QnjOId1j0ub-Urfgaums9MXd88ViyQP5m4YMVki8Z5CLTxCCBLL8Xeho2FzWkirR7JBnm8RdKQNOoy_DEqb1Unsluu6NfoPZw9vKvkgXx5XiTjN3FcfYa8O6ML0x8ZDzwRB9M3D7IH1CizNDyE9iYwVoeBjRw8M1GKSpBRfGK-Q9ptKhhbSuqbYm6C5uyIHXPqjeg6GpSrCVC1hvXfmnXqxq6veGF73C925mvPBs"/>
+<div class="absolute inset-0 bg-primary-container/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<button class="absolute bottom-0 left-0 right-0 py-4 bg-primary text-on-primary-fixed font-headline font-bold translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        AÑADIR A BOLSA
+                    </button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-xl tracking-tight mb-1">Eau de Parfum 'Obsidian'</h3>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Fragancias de Autor</p>
+</div>
+<span class="font-headline font-medium text-lg">$195.00</span>
+</div>
+</div>
+<!-- More Products... -->
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Artisanal black soap bars stacked on a dark stone tray with water droplets and dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw5d1RFxiHYutOGOKNXWeUT971D2QsoBTmuQXn3qOayK1mSHmY8xeaGZ13pyo8kqSts5DqcA0A_sJY9RKufq_DLXasQRCcGGQrO3ipKvwojUILY1ldvIJbyewjup75VnW3j7SCWzTXKopz0C00G899Nkq27KDNaiumMHQSb3YadZrVI1qS2kCAQzXSONYC8cj5sTrMdaQi-oDVQ30q9GABVhor3o34MJP_vsgrZ4DpoMzNDY6mjv9og-z6l21a6NSJX7xi6zuWIpA"/>
+<button class="absolute bottom-0 left-0 right-0 py-4 bg-primary text-on-primary-fixed font-headline font-bold translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        AÑADIR A BOLSA
+                    </button>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-xl tracking-tight mb-1">Barra Limpiadora de Carbón</h3>
+<p class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest">Limpieza Profunda</p>
+</div>
+<span class="font-headline font-medium text-lg">$28.00</span>
+</div>
+</div>
+<!-- Featured Quote (Breaking Grid) -->
+<div class="md:col-span-2 flex items-center justify-center p-20 bg-surface-container-low/50 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 blur-[120px] rounded-full"></div>
+<div class="max-w-md text-center">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">format_quote</span>
+<p class="font-headline italic text-3xl font-light leading-relaxed text-on-surface mb-8">
+                        "El lujo no es lo que posees, sino la intención detrás de cada ritual diario."
+                    </p>
+<p class="font-label text-[10px] uppercase tracking-[0.4em] text-on-surface-variant">FUNDADOR DE OBSIDIAN</p>
+</div>
+</div>
+</section>
+<!-- Newsletter / Community Section -->
+<section class="mb-40 px-12">
+<div class="bg-surface-container-low py-32 px-12 md:px-24 flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="max-w-xl">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight mb-4 uppercase">Únete al Círculo</h2>
+<p class="font-body text-on-surface-variant text-lg">Recibe ediciones limitadas, preventas exclusivas y guías de cuidado editorial directamente en tu bandeja.</p>
+</div>
+<div class="w-full max-w-md">
+<form class="flex border-b border-outline-variant pb-2">
+<input class="bg-transparent border-none focus:ring-0 font-label tracking-widest text-sm w-full placeholder:text-on-surface-variant/40" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="font-headline font-bold text-primary hover:text-white transition-colors">UNIRSE</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#1b1b1b] w-full py-20 px-12 font-manrope text-[10px] uppercase tracking-[0.05em]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full max-w-screen-2xl mx-auto">
+<div class="mb-12 md:mb-0">
+<div class="text-lg font-black text-[#e2e2e2] mb-4">OBSIDIAN</div>
+<p class="text-[#e2e2e2]/40">© 2024 OBSIDIAN CURATOR. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 md:gap-16 text-center md:text-left">
+<div class="flex flex-col gap-4">
+<span class="text-green-500 font-bold mb-2">Comprar</span>
+<a class="text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Nuevos Ingresos</a>
+<a class="text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Best Sellers</a>
+<a class="text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Ediciones Limitadas</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-green-500 font-bold mb-2">Soporte</span>
+<a class="text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Shipping</a>
+<a class="text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Contact</a>
+<a class="text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Terms</a>
+<a class="text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Privacy</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="text-green-500 font-bold mb-2">Social</span>
+<a class="text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Instagram</a>
+<a class="text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Pinterest</a>
+<a class="text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">TikTok</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

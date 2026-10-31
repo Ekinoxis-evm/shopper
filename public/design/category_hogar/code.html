@@ -1,0 +1,241 @@
+<html><head>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="dark font-body antialiased">```html
+<meta charset="utf-8"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&amp;family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "secondary-fixed-dim": "#96d59d",
+                "on-tertiary-fixed-variant": "#7f2a21",
+                "on-secondary-container": "#89c78f",
+                "on-tertiary-fixed": "#410001",
+                "surface-variant": "#353535",
+                "tertiary-container": "#ff8b7c",
+                "surface-dim": "#131313",
+                "outline-variant": "#3d4a3d",
+                "on-tertiary": "#60130d",
+                "background": "#131313",
+                "outline": "#869585",
+                "on-secondary-fixed-variant": "#145126",
+                "on-primary-fixed-variant": "#005321",
+                "inverse-primary": "#006e2f",
+                "tertiary-fixed-dim": "#ffb4a9",
+                "primary": "#4be277",
+                "tertiary": "#ffb5ab",
+                "surface-container-high": "#2a2a2a",
+                "surface-container-low": "#1b1b1b",
+                "secondary-container": "#175428",
+                "error": "#ffb4ab",
+                "secondary": "#96d59d",
+                "error-container": "#93000a",
+                "surface-container-lowest": "#0e0e0e",
+                "primary-container": "#22c55e",
+                "on-surface-variant": "#bccbb9",
+                "surface-container-highest": "#353535",
+                "on-background": "#e2e2e2",
+                "surface": "#131313",
+                "on-surface": "#e2e2e2",
+                "inverse-on-surface": "#303030",
+                "tertiary-fixed": "#ffdad5",
+                "surface-container": "#1f1f1f",
+                "on-error": "#690005",
+                "secondary-fixed": "#b2f2b7",
+                "on-primary-fixed": "#002109",
+                "primary-fixed": "#6bff8f",
+                "on-tertiary-container": "#76231b",
+                "on-primary": "#003915",
+                "inverse-surface": "#e2e2e2",
+                "on-secondary": "#003915",
+                "on-secondary-fixed": "#002109",
+                "surface-tint": "#4ae176",
+                "primary-fixed-dim": "#4ae176",
+                "on-error-container": "#ffdad6",
+                "on-primary-container": "#004b1e",
+                "surface-bright": "#393939"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {},
+        "fontFamily": {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+        }
+      },
+    },
+  }
+</script>
+<style>
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    vertical-align: middle;
+  }
+  body {
+    background-color: #131313;
+    color: #e2e2e2;
+  }
+  .curator-glass {
+    background: rgba(19, 19, 19, 0.6);
+    backdrop-filter: blur(24px);
+  }
+  .accent-gradient {
+    background: linear-gradient(135deg, #4be277 0%, #22c55e 100%);
+  }
+</style>
+<!-- TopNavBar (Shared Component) -->
+<nav class="fixed top-0 w-full z-50 bg-[#131313]/60 backdrop-blur-xl">
+<div class="flex justify-between items-center px-12 py-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#e2e2e2] font-headline">OBSIDIAN</div>
+<div class="hidden md:flex gap-12 items-center font-plus-jakarta-sans tracking-tight">
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-colors hover:opacity-80 transition-all duration-300" href="#">Ropa</a>
+<a class="text-green-500 font-bold border-b-2 border-green-500 pb-1 hover:opacity-80 transition-all duration-300" href="#">Hogar</a>
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-colors hover:opacity-80 transition-all duration-300" href="#">Mascotas</a>
+<a class="text-[#e2e2e2]/60 hover:text-[#e2e2e2] transition-colors hover:opacity-80 transition-all duration-300" href="#">Cuidado Personal</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-80 transition-all duration-300 scale-95 duration-200">
+<span class="material-symbols-outlined text-[#e2e2e2]" data-icon="shopping_bag">shopping_bag</span>
+</button>
+<button class="hover:opacity-80 transition-all duration-300 scale-95 duration-200">
+<span class="material-symbols-outlined text-[#e2e2e2]" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Editorial Section -->
+<section class="px-12 mb-32 max-w-screen-2xl mx-auto grid grid-cols-12 items-end">
+<div class="col-span-12 md:col-span-7">
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-primary mb-4 block">Colección Editorial 2024</span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter leading-[0.9] text-on-background mb-8">
+          Hogar<br/><span class="text-surface-container-highest">Elevado.</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed mb-12">
+          Una curaduría de piezas arquitectónicas diseñadas para transformar el espacio cotidiano en una experiencia sensorial de minimalismo y luz.
+        </p>
+</div>
+<div class="col-span-12 md:col-span-5 flex justify-end">
+<div class="w-full h-[500px] overflow-hidden rounded-lg bg-surface-container relative">
+<img alt="Interior of a luxury minimalist living room with a sculptural chair and soft morning light casting long shadows" class="w-full h-full object-cover grayscale opacity-80" data-alt="Interior of a luxury minimalist living room with a sculptural chair and soft morning light casting long shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoOVYZLzQWjnNplxywFTCJkJ-pXvPxt4HMhbpo2BLHx0jKSPWiGFM4XahOP3upVieteAvhiPwKpAtLjsZz-wR7m6aDGtgejrDwLOBddKuAh-i549Epdt4OpVco2vm1RuJZeyO0DxJN6atsq_r5KMuNvG2XwMZJcqr76LWtXfBrx1IadxonKJ3tHUUl4cKoE5m7cGsIiIS8qxe6Hfu9ipGowehHUI4seNQhvj1H0jTx6XyGjidj2Vl2-Ou5-X0BHOvzBRm5IHiHhuQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+</div>
+</div>
+</section>
+<!-- Asymmetric Product Grid -->
+<section class="px-12 max-w-screen-2xl mx-auto space-y-40">
+<!-- Bento-style Grid 01 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Feature 01: Architectural Lighting -->
+<div class="col-span-1 md:col-span-8 group">
+<div class="bg-surface-container-low overflow-hidden rounded-lg relative aspect-[16/9] mb-6">
+<img alt="Minimalist pendant light fixture with geometric design emitting warm soft glow in a dark concrete room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist pendant light fixture with geometric design emitting warm soft glow in a dark concrete room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVNjJgyBadyi2Nlh266WgkadvbuF3eHFSZ51I-WUMAVX8UFRiItTJvy6I3DQ-AsN_0kv-7OjX3XfWHRmD3eLTdmXLF6GTxzGj1nVo10QvslHLTUqmrXj5jWt8HCQzPvHVZxf87mBlq9cbxeIfjgaJXfrusLdYos_Umxo9p7h3t4xk4eo-f4X1GJfj_Y4Csl5z95THWHk4ly2AlPsLMj7_i9sEi7JFTjCor5Q5wPVJbxR453QMm75P0Fo3uix2m6rt7cy28yRFzIs8"/>
+<div class="absolute top-6 right-6">
+<span class="bg-primary/10 text-primary px-4 py-2 rounded-full font-label text-[10px] uppercase tracking-wider backdrop-blur-md">Novedad</span>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-2xl mb-1">Luminaria Brutalista Ø40</h3>
+<p class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Iluminación / Escultura</p>
+</div>
+<div class="text-right">
+<p class="text-xl font-headline font-bold text-primary-container mb-2">$1,240</p>
+<button class="accent-gradient text-on-primary-fixed px-6 py-2 rounded font-bold text-sm transition-all duration-300 hover:opacity-90 active:scale-95">Añadir</button>
+</div>
+</div>
+</div>
+<!-- Mini Grid Column -->
+<div class="col-span-1 md:col-span-4 flex flex-col gap-12">
+<div class="group">
+<div class="bg-surface-container-high aspect-square rounded-lg mb-6 overflow-hidden">
+<img alt="Modern velvet chair in deep emerald green against a dark charcoal wall with dramatic top-down lighting" class="w-full h-full object-cover opacity-90 transition-transform duration-700 group-hover:scale-110" data-alt="Modern velvet chair in deep emerald green against a dark charcoal wall with dramatic top-down lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCP1NjaICy_AghDXF8d40jsTl0wavvwVGFhvms5EfImMY4eY2fNxEMhfSDTPaNRIyqys7_vEPiDG4KfXAqQH_HfTOCPqHgq6xQ7tly0QdCG2U3JirjVQPeBwrRuzt2DnG-pTC7LwAidj4u1Grod5jefA8oygGoerNvF8fkpk2i6qi1IU21TKyaojpFd8bgjlTm1qgHrB7ydlco66I-P8Xk8K3GoEspS4KGYbENfTW7QqD7-7-oTWGNKmIYpqB4IAn7il4IiQxGxK0o"/>
+</div>
+<h4 class="font-headline font-bold text-lg mb-1">Butaca Obsidian Velvet</h4>
+<p class="text-primary-container font-bold">$890</p>
+</div>
+<div class="group">
+<div class="bg-surface-container aspect-square rounded-lg mb-6 overflow-hidden">
+<img alt="Minimalist black ceramic vase with a single dried branch in a dimly lit studio setting" class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-110" data-alt="Minimalist black ceramic vase with a single dried branch in a dimly lit studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs_XhgARNEztHz3YhLj69vKUUHxG2TVALRfEaEUhHAHXx-0GoeBrx7nlcGRwry1VbR4y0PrkJi-uGbuWYHBEJ46H6Rr2iqVVSTWz9tdFNXKuxRqpm9qf_NQ_DBzu-KYUvQoEBWSdW9AOp3KQtb6yzgTN4j-gJioIyQXLHH-1TbbpgU_ffv5M4KH0imh2C-WraSuznbOgs5I5LfXrSXKp-5AUD46HwkkiDb76qOrgPicVWWniMUSA2ym2tQa2Am4C0aUAjk7_7Y2Uc"/>
+</div>
+<h4 class="font-headline font-bold text-lg mb-1">Vaso Monolito Negro</h4>
+<p class="text-primary-container font-bold">$245</p>
+</div>
+</div>
+</div>
+<!-- Text Interstitial -->
+<div class="py-24 border-y border-outline-variant/10 text-center">
+<h2 class="text-4xl md:text-6xl font-headline font-bold tracking-tight text-on-background/30 max-w-4xl mx-auto leading-tight italic">
+          "La arquitectura no es solo el espacio, sino la luz que lo habita."
+        </h2>
+</div>
+<!-- Second Grid: Asymmetric Rows -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<div class="group flex flex-col md:pt-20">
+<div class="bg-surface-container-low aspect-[4/5] rounded-lg overflow-hidden mb-8">
+<img alt="Architectural concrete kitchen island with sleek lines and soft ambient lighting in a dark luxury home" class="w-full h-full object-cover opacity-80 transition-all duration-700 group-hover:opacity-100 group-hover:scale-105" data-alt="Architectural concrete kitchen island with sleek lines and soft ambient lighting in a dark luxury home" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcILE0Z6L97X3pUPGJASic7XGna1coqVcbzKd88EBWrVKn7kIjepbu0owO4ACsPJLukK8fUsph9PuGM2UMku9Kj-y9yTPmCFkh5PEYXtQdLAUUEKiMcElS8G4BfG7rV8spWdXqjkrYR8N48fav7Q1OIcIG6HRo0Y6tjGAOarmid-jdSYs-terVaZqrG1fsK3hq_tF-_uDUkvWQ-3TqnbifpsWXgytIq5JrBj_YU-AvJ5KtZ3TWqGpOlJ0jI9zOOxifmCHsLHeUmrw"/>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2 block">Mobiliario de Autor</span>
+<h3 class="font-headline font-bold text-3xl">Mesa de Centro Ciment</h3>
+</div>
+<p class="text-2xl font-headline font-extrabold text-primary">$3,400</p>
+</div>
+</div>
+<div class="group flex flex-col">
+<div class="bg-surface-container-high aspect-[4/5] rounded-lg overflow-hidden mb-8">
+<img alt="Luxury dark bedroom with high-end designer lamp on a marble side table, moody atmospheric lighting" class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105" data-alt="Luxury dark bedroom with high-end designer lamp on a marble side table, moody atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz8e01MMtBMqJVnu2YN6WVtSXIc6fvpijx1lHMcw2bE9SghoX_t14QY5DG_hRk9SyxlS4DgqYovtomczfAl9y6H7brzWs7ouvxhAjCgiLWuzrzgMon78_FOBBIEsq5YDKrWzCdDy9t6BOgpvn20ACU5ZGOxFC9-xE6qRZBYEU1C2yDofLYAHDxXk8wscLcY2i3ifQZ7WMvhHvlf1F2FZeu8fzm4NdkLpj2ZgOGuL7kkLibUJOdIf5G6dSkgsboS6ABd2Vx2djfN6U"/>
+</div>
+<div class="flex justify-between items-end">
+<div>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2 block">Premium Lighting</span>
+<h3 class="font-headline font-bold text-3xl">Lámpara Esfera Mármol</h3>
+</div>
+<p class="text-2xl font-headline font-extrabold text-primary">$1,850</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Curator Glass CTA Section -->
+<section class="mt-40 px-12 max-w-screen-2xl mx-auto">
+<div class="curator-glass rounded-3xl p-12 md:p-24 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-12">
+<div class="max-w-xl">
+<h2 class="text-4xl md:text-6xl font-headline font-extrabold mb-8 leading-tight">Consulta Personalizada de Diseño.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-8">Nuestros curadores le ayudarán a seleccionar las piezas que mejor se adapten a su arquitectura.</p>
+<button class="accent-gradient text-on-primary-fixed px-10 py-4 rounded-lg font-extrabold uppercase tracking-widest text-sm hover:scale-105 transition-transform">Agendar Cita</button>
+</div>
+<div class="relative w-full md:w-1/3 aspect-square">
+<div class="absolute inset-0 rounded-full border-4 border-dashed border-primary/20 animate-[spin_20s_linear_infinite]"></div>
+<div class="absolute inset-4 rounded-full overflow-hidden">
+<img alt="Professional male interior designer portrait in a dark minimalist studio" class="w-full h-full object-cover grayscale" data-alt="Professional male interior designer portrait in a dark minimalist studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy-UP1_8qEeWCLwJKZEmpiofML49pnXhDAR6YO0firOxCbHUYL3v4wBnMBR8jkFuY_E3eK1Gs9lGeES8XA1bxomXdd9d0DsD23Ul9sLtfuZ1wYxvhkDE0RW50jjdQqzAwgi-OPnvsZ-BC1GNLFCRztbhpqyOicgzUWm2jJGUdVxjNMtH8beDT6SXNkvMGAcK6pD9p4y0HCUUGwp_vy_o8dObqbnHXOVQadagxrwn7xvtCHAbJ-LAgEEmjuizFs9FizEOYdvSFvjGk"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-20 px-12 bg-[#1b1b1b]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full max-w-screen-2xl mx-auto gap-12 md:gap-0">
+<div class="text-lg font-black text-[#e2e2e2] font-headline">OBSIDIAN</div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-manrope text-[10px] uppercase tracking-[0.05em] text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Privacy</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.05em] text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Terms</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.05em] text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Shipping</a>
+<a class="font-manrope text-[10px] uppercase tracking-[0.05em] text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Contact</a>
+</div>
+<div class="font-manrope text-[10px] uppercase tracking-[0.05em] text-[#e2e2e2]/40">
+        © 2024 OBSIDIAN CURATOR. ALL RIGHTS RESERVED.
+      </div>
+</div>
+</footer>
+
+```</body></html>
