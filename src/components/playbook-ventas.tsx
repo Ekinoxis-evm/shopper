@@ -11,7 +11,7 @@ import {
   SelectItem,
   SelectTrigger,
 } from "@/components/ui/select";
-import { setPlaybookProduct } from "@/app/(admin)/playbook/actions";
+import { setPlaybookProduct } from "@/app/admin/(panel)/playbook/actions";
 import type { Product } from "@/lib/types";
 
 // ─── Stage accent colors ───────────────────────────────────────────────────────

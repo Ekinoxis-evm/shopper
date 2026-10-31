@@ -31,16 +31,16 @@ import { createClient } from "@/lib/supabase/client";
 import { useRouter } from "next/navigation";
 
 const navItems = [
-  { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
-  { href: "/orders", label: "Órdenes", icon: ShoppingBag },
-  { href: "/conversations", label: "Conversaciones", icon: MessageSquare },
-  { href: "/products", label: "Productos", icon: Package },
-  { href: "/categories", label: "Categorías", icon: FolderOpen },
-  { href: "/ads", label: "Anuncios", icon: Megaphone },
-  { href: "/segments", label: "Segmentación", icon: Target },
-  { href: "/benefits", label: "Beneficios", icon: Gift },
-  { href: "/playbook", label: "Playbook", icon: BookOpen },
-  { href: "/config", label: "Configuración", icon: Settings },
+  { href: "/admin/dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/admin/orders", label: "Órdenes", icon: ShoppingBag },
+  { href: "/admin/conversations", label: "Conversaciones", icon: MessageSquare },
+  { href: "/admin/products", label: "Productos", icon: Package },
+  { href: "/admin/categories", label: "Categorías", icon: FolderOpen },
+  { href: "/admin/ads", label: "Anuncios", icon: Megaphone },
+  { href: "/admin/segments", label: "Segmentación", icon: Target },
+  { href: "/admin/benefits", label: "Beneficios", icon: Gift },
+  { href: "/admin/playbook", label: "Playbook", icon: BookOpen },
+  { href: "/admin/config", label: "Configuración", icon: Settings },
 ];
 
 export function AppSidebar() {
@@ -50,7 +50,7 @@ export function AppSidebar() {
 
   async function handleLogout() {
     await supabase.auth.signOut();
-    router.push("/login");
+    router.push("/admin/login");
     router.refresh();
   }
 

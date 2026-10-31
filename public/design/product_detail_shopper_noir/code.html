@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Temporal Black Chronograph | OBSIDIAN</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-high": "#2a2a2a",
+                      "outline": "#869585",
+                      "on-tertiary-fixed": "#410001",
+                      "surface-container-lowest": "#0e0e0e",
+                      "surface-container-highest": "#353535",
+                      "on-primary-fixed-variant": "#005321",
+                      "tertiary": "#ffb5ab",
+                      "secondary-fixed-dim": "#96d59d",
+                      "error": "#ffb4ab",
+                      "surface-dim": "#131313",
+                      "outline-variant": "#3d4a3d",
+                      "on-secondary-fixed-variant": "#145126",
+                      "inverse-on-surface": "#303030",
+                      "tertiary-container": "#ff8b7c",
+                      "background": "#131313",
+                      "on-error-container": "#ffdad6",
+                      "primary-container": "#22c55e",
+                      "on-tertiary-fixed-variant": "#7f2a21",
+                      "on-surface": "#e2e2e2",
+                      "on-primary-fixed": "#002109",
+                      "inverse-surface": "#e2e2e2",
+                      "secondary-fixed": "#b2f2b7",
+                      "error-container": "#93000a",
+                      "surface": "#131313",
+                      "on-surface-variant": "#bccbb9",
+                      "surface-bright": "#393939",
+                      "primary-fixed-dim": "#4ae176",
+                      "tertiary-fixed": "#ffdad5",
+                      "secondary-container": "#175428",
+                      "on-background": "#e2e2e2",
+                      "surface-variant": "#353535",
+                      "on-secondary-fixed": "#002109",
+                      "on-secondary-container": "#89c78f",
+                      "surface-container": "#1f1f1f",
+                      "tertiary-fixed-dim": "#ffb4a9",
+                      "primary": "#4be277",
+                      "on-secondary": "#003915",
+                      "on-tertiary": "#60130d",
+                      "on-primary": "#003915",
+                      "inverse-primary": "#006e2f",
+                      "surface-container-low": "#1b1b1b",
+                      "on-tertiary-container": "#76231b",
+                      "surface-tint": "#4ae176",
+                      "secondary": "#96d59d",
+                      "primary-fixed": "#6bff8f",
+                      "on-primary-container": "#004b1e",
+                      "on-error": "#690005"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.5rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Plus Jakarta Sans"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 40px 60px -15px rgba(0, 83, 33, 0.08);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #131313;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #22c55e;
+            border-radius: 10px;
+        }
+        .gallery-thumbnail.active {
+            border-color: #4be277;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] rounded-2xl bg-[#131313]/60 backdrop-blur-3xl z-50 editorial-shadow">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-[#e2e2e2] uppercase font-headline">OBSIDIAN</div>
+<div class="hidden md:flex items-center gap-10 font-plus-jakarta-sans tracking-tight text-[#e2e2e2]">
+<a class="text-green-500 font-bold border-b-2 border-green-500 pb-1" href="#">Curation</a>
+<a class="text-[#e2e2e2]/70 hover:text-[#e2e2e2] transition-all duration-300" href="#">Archive</a>
+<a class="text-[#e2e2e2]/70 hover:text-[#e2e2e2] transition-all duration-300" href="#">Boutique</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-[#e2e2e2] hover:bg-[#1f1f1f] p-2 rounded-full transition-all duration-300 scale-95 active:scale-90" data-icon="shopping_bag">shopping_bag</button>
+<button class="material-symbols-outlined text-[#e2e2e2] hover:bg-[#1f1f1f] p-2 rounded-full transition-all duration-300 scale-95 active:scale-90" data-icon="menu">menu</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Breadcrumbs -->
+<nav class="flex items-center gap-2 mb-12 text-xs font-label uppercase tracking-widest text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Shopper Noir</a>
+<span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Timepieces</a>
+<span class="material-symbols-outlined text-[14px]" data-icon="chevron_right">chevron_right</span>
+<span class="text-on-surface">Temporal Black Chronograph</span>
+</nav>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20">
+<!-- Product Gallery Section -->
+<div class="lg:col-span-7 flex flex-col md:flex-row-reverse gap-4">
+<!-- Main Display Area -->
+<div class="flex-1 relative group">
+<div class="aspect-[4/5] bg-surface-container rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out scale-100 hover:scale-105" data-alt="Macro cinematic shot of a luxury matte black chronograph watch with intricate dial details, resting on a dark obsidian stone base with moody green rim lighting." id="main-product-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqKPBy5Jgb5B56KCmZCh2icaB4qQw6LUkLTDdyEYA3x-Vj6PBR1YApFnvwVL2ptguIHPmgZ-opv7Y0zJWEOYOFxpLhWWzTOo_vkxSw7TrbxuC5-tUPA-X-z8oDDlvZ_iuimXBllVvQMq-w8Fe_YRZt6uAR3mHJdVgu-9TNXiBRrnA3pO-7QZw3g_C1zOXGQywoJMi0QVgGL8NaE2AzYCLFajmAwrdhJaBFn-vwR60TeCRVsdWwWmTlNFZ0-2jHb84K-3Y4kTEzVb4"/>
+</div>
+</div>
+<!-- Thumbnails Column -->
+<div class="flex md:flex-col gap-4 overflow-x-auto md:overflow-y-auto md:w-24 custom-scrollbar pb-2 md:pb-0">
+<button class="gallery-thumbnail active flex-shrink-0 w-20 h-20 md:w-full md:h-24 rounded-xl bg-surface-container border-2 border-primary overflow-hidden transition-all duration-300 opacity-100" onclick="updateMainImage(this, 'https://lh3.googleusercontent.com/aida-public/AB6AXuDqKPBy5Jgb5B56KCmZCh2icaB4qQw6LUkLTDdyEYA3x-Vj6PBR1YApFnvwVL2ptguIHPmgZ-opv7Y0zJWEOYOFxpLhWWzTOo_vkxSw7TrbxuC5-tUPA-X-z8oDDlvZ_iuimXBllVvQMq-w8Fe_YRZt6uAR3mHJdVgu-9TNXiBRrnA3pO-7QZw3g_C1zOXGQywoJMi0QVgGL8NaE2AzYCLFajmAwrdhJaBFn-vwR60TeCRVsdWwWmTlNFZ0-2jHb84K-3Y4kTEzVb4')">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqKPBy5Jgb5B56KCmZCh2icaB4qQw6LUkLTDdyEYA3x-Vj6PBR1YApFnvwVL2ptguIHPmgZ-opv7Y0zJWEOYOFxpLhWWzTOo_vkxSw7TrbxuC5-tUPA-X-z8oDDlvZ_iuimXBllVvQMq-w8Fe_YRZt6uAR3mHJdVgu-9TNXiBRrnA3pO-7QZw3g_C1zOXGQywoJMi0QVgGL8NaE2AzYCLFajmAwrdhJaBFn-vwR60TeCRVsdWwWmTlNFZ0-2jHb84K-3Y4kTEzVb4"/>
+</button>
+<button class="gallery-thumbnail flex-shrink-0 w-20 h-20 md:w-full md:h-24 rounded-xl bg-surface-container border-2 border-transparent overflow-hidden transition-all duration-300 opacity-50 hover:opacity-100" onclick="updateMainImage(this, 'https://lh3.googleusercontent.com/aida-public/AB6AXuAnFSGH26ge9fC019arIbUtxrlXfe2L0aiNbJ0-XaaLkT9fqwdkqY4K0aFJSOdX_3fvIW6xE-EirZUrB8GK7pwHTDjfpkZX1BGej9O5XpSUBQONMzLfMhKXXG2Mz_xoqWySvWybUnXe1aE5ryCbCiLSE5PxYKJA3s7x6876Lfyvk2xN6vMJjOTvV-B8CSx5ltfgBYqW3vFDNVmPOZF1QxRnOFipPC2XIjUUz71WePdSro2DH5G8-PsnXyUOHSTPIVpi6iUjxTugHKc')">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnFSGH26ge9fC019arIbUtxrlXfe2L0aiNbJ0-XaaLkT9fqwdkqY4K0aFJSOdX_3fvIW6xE-EirZUrB8GK7pwHTDjfpkZX1BGej9O5XpSUBQONMzLfMhKXXG2Mz_xoqWySvWybUnXe1aE5ryCbCiLSE5PxYKJA3s7x6876Lfyvk2xN6vMJjOTvV-B8CSx5ltfgBYqW3vFDNVmPOZF1QxRnOFipPC2XIjUUz71WePdSro2DH5G8-PsnXyUOHSTPIVpi6iUjxTugHKc"/>
+</button>
+<button class="gallery-thumbnail flex-shrink-0 w-20 h-20 md:w-full md:h-24 rounded-xl bg-surface-container border-2 border-transparent overflow-hidden transition-all duration-300 opacity-50 hover:opacity-100" onclick="updateMainImage(this, 'https://lh3.googleusercontent.com/aida-public/AB6AXuBI6Ksj-uCBhPEl-W5tEzJN1rBfcbDfwWkRhuhaCVRtenF1Uvvca9QkvGw6ha3HdIBuR7gVs0TPLN5RpV3L-bQmImYjYt0fJT21eDiY9ZJeCouC1XmSBpahIl2hXiM2BU70PJf90JFW3vLXfCStxXdgujl2udg8WdqARAnclSlxrqqUtC4TBqovdK5IkOvcz1hzRujH_Rc9TBGAttVHZJND3zb-0wEb7f0QZaZd0KUnGobppgEgWrTYsPfHRU7ie3-M7D3Uu2krfoE')">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI6Ksj-uCBhPEl-W5tEzJN1rBfcbDfwWkRhuhaCVRtenF1Uvvca9QkvGw6ha3HdIBuR7gVs0TPLN5RpV3L-bQmImYjYt0fJT21eDiY9ZJeCouC1XmSBpahIl2hXiM2BU70PJf90JFW3vLXfCStxXdgujl2udg8WdqARAnclSlxrqqUtC4TBqovdK5IkOvcz1hzRujH_Rc9TBGAttVHZJND3zb-0wEb7f0QZaZd0KUnGobppgEgWrTYsPfHRU7ie3-M7D3Uu2krfoE"/>
+</button>
+<button class="gallery-thumbnail flex-shrink-0 w-20 h-20 md:w-full md:h-24 rounded-xl bg-surface-container border-2 border-transparent overflow-hidden transition-all duration-300 opacity-50 hover:opacity-100" onclick="updateMainImage(this, 'https://lh3.googleusercontent.com/aida-public/AB6AXuBLWFpPyBvQk6zMX5oCwxD3Z4EjQG7CGeInLWIJ-_tDm-HZ3bUj9b8ZzdCPGyDnLhxTIY99u99O30O7a7hKkGIEarMjPRwg9kAZptyqZamiOcZsPiKHQCpg7LxE4-x2-Ird-6hGu1vM6c1G9gW-iSwsbTiZHzCIKpZ6NLKwqVdVVAfuIdoYeHpWY3HZZnQDXm3k1TP4XNCymVUY4O2Tvhj6zUW1d0IKiIXNnPogE4lyraqo9yR1k0JEThdFX-JTdjP_wrLnC6JOiZg')">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLWFpPyBvQk6zMX5oCwxD3Z4EjQG7CGeInLWIJ-_tDm-HZ3bUj9b8ZzdCPGyDnLhxTIY99u99O30O7a7hKkGIEarMjPRwg9kAZptyqZamiOcZsPiKHQCpg7LxE4-x2-Ird-6hGu1vM6c1G9gW-iSwsbTiZHzCIKpZ6NLKwqVdVVAfuIdoYeHpWY3HZZnQDXm3k1TP4XNCymVUY4O2Tvhj6zUW1d0IKiIXNnPogE4lyraqo9yR1k0JEThdFX-JTdjP_wrLnC6JOiZg"/>
+</button>
+</div>
+</div>
+<!-- Product Details -->
+<div class="lg:col-span-5 flex flex-col justify-center">
+<div class="space-y-2 mb-8">
+<span class="text-primary font-label text-xs tracking-[0.2em] uppercase font-bold">Precision Series</span>
+<h1 class="text-4xl lg:text-5xl font-headline font-bold tracking-tighter leading-tight">Temporal Black Chronograph</h1>
+</div>
+<div class="mb-10">
+<div class="text-3xl font-headline font-bold text-on-background">$1,240</div>
+<p class="mt-6 text-on-surface-variant font-light leading-relaxed max-w-md">
+                        A definitive statement in monochromatic precision. Hand-assembled with a Grade 5 Titanium core and coated in a deep Obsidian DLC for unparalleled scratch resistance.
+                    </p>
+</div>
+<!-- Selectors -->
+<div class="space-y-8 mb-12">
+<div>
+<label class="block text-[10px] font-label uppercase tracking-widest text-on-surface-variant mb-4">Case Diameter</label>
+<div class="flex gap-3">
+<button class="px-6 py-2 rounded-lg bg-surface-container-highest border border-primary/40 text-primary text-sm font-medium">42mm</button>
+<button class="px-6 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant text-sm font-medium transition-all">45mm</button>
+</div>
+</div>
+<div>
+<label class="block text-[10px] font-label uppercase tracking-widest text-on-surface-variant mb-4">Strap Material</label>
+<div class="flex gap-4">
+<div class="group cursor-pointer">
+<div class="w-8 h-8 rounded-full bg-black border-2 border-primary group-hover:scale-110 transition-transform"></div>
+<span class="text-[9px] block text-center mt-2 uppercase tracking-tighter opacity-0 group-hover:opacity-100 transition-opacity">Vulcanized Rubber</span>
+</div>
+<div class="group cursor-pointer">
+<div class="w-8 h-8 rounded-full bg-zinc-800 border-2 border-transparent group-hover:border-primary/40 group-hover:scale-110 transition-transform"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA -->
+<button class="w-full py-5 rounded-lg bg-gradient-to-br from-primary to-primary-container text-on-primary-fixed font-bold text-sm uppercase tracking-widest editorial-shadow scale-100 active:scale-95 transition-all mb-4">
+                    Añadir al carrito
+                </button>
+<p class="text-[10px] text-center text-on-surface-variant/60 uppercase tracking-widest">Complimentary worldwide shipping &amp; 5-year warranty</p>
+<!-- Detailed Specs -->
+<div class="mt-16 space-y-4 pt-12 border-t border-outline-variant/10">
+<details class="group">
+<summary class="flex justify-between items-center cursor-pointer list-none py-2">
+<span class="font-headline text-sm font-bold uppercase tracking-tight">Technical Specifications</span>
+<span class="material-symbols-outlined text-primary group-open:rotate-180 transition-transform" data-icon="expand_more">expand_more</span>
+</summary>
+<div class="py-4 text-sm text-on-surface-variant font-light space-y-3">
+<div class="flex justify-between border-b border-outline-variant/5 pb-2">
+<span>Movement</span>
+<span class="text-on-surface">Swiss Automatic Calibre OBS-01</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/5 pb-2">
+<span>Power Reserve</span>
+<span class="text-on-surface">72 Hours</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/5 pb-2">
+<span>Water Resistance</span>
+<span class="text-on-surface">100 Meters / 10 ATM</span>
+</div>
+</div>
+</details>
+</div>
+</div>
+</div>
+<!-- Related Products Section -->
+<section class="mt-32">
+<div class="flex justify-between items-end mb-12">
+<h2 class="text-2xl font-headline font-bold tracking-tight">Curated Accompaniments</h2>
+<a class="text-xs font-label uppercase tracking-widest text-primary border-b border-primary/20 pb-1" href="#">View Collection</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Related Item 1 -->
+<div class="group">
+<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist architectural black leather card holder on a neutral gray background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLxituZSFxvFM73vB24dhgXBDzS3kP4_LUUiYB6WIj8gt3tPmAtEYu18WHCb8Bn0KJwuvQXV29LQxnRaoh1PKodFBROAxj8yx-cX-GIcQaYDCPisQOpEedSmTb4AGCFX7RA_zoa3gLhQIESxicGuoYPCRZ-5LhvBcjzqxT5jr2W2vF0D8ONxIVeLfaP-ci4c5pClxNXoij1TIe_A0vKD4NKqUS_6nQXtk743WU7o9XXJx1zjNJqUwuZqtWU2IZJoC-VYBUZ3oab-4"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-sm mb-1">Shadow Card Holder</h3>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">Noir Leather</p>
+</div>
+<span class="text-sm font-bold">$280</span>
+</div>
+</div>
+<!-- Related Item 2 -->
+<div class="group">
+<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Heavy matte black fountain pen with silver accents lying on a black notebook." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX838PzH3gDx--Ou9G8lnYXNQB4od82cKXEuy9E7EE1HJsLQj7oOI5rd_yIDMfXbd5NbAzPUe8eVpGswojZXzWJbOjQeQgMT5PEkF0AwyiIQNtAXo-g3GQzsVXPbjWVGvYlBhjOapaNjJZkTBGASI3sFsADNcxoJfgj5EtmIgaJOEKqQCHVwkG3bDpz5m_-02P4iMqAiCgyNLlxdXtLboJpqcfkqTKntOr6F3g9oCvlE1bD4ODwS_hByPCGvKcM1P3L4aU7Hxre0Y"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-sm mb-1">Scriptor Onyx Pen</h3>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">Writing Instruments</p>
+</div>
+<span class="text-sm font-bold">$410</span>
+</div>
+</div>
+<!-- Related Item 3 -->
+<div class="group">
+<div class="aspect-square bg-surface-container-low rounded-xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end matte black wireless headphones with premium leather padding." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkeFraNewTKfWuKuqE9ko07qUvXcUgYoAuFFv6TzuM4P70yz-OTY5fV7OIYhQl3y7CyWsA_jvyf2NsARn624xSO8os7KdDIwB7PvEuEpOkz9sCh51tE2-WGyajjyB2tiI5KIiZZu6L3rfTpGDdH5WMANh3Ns7dKgb7s6UdPVlrOZzM4INg9nOtUXGvD5gS-pZdbatN6-Qd2wMSuXZgvuz-DGO5zBYHT_uQsuCxD50WEmv9Vh9A8UxD-84EM1szD_i9FjEltAMQ4v8"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline font-bold text-sm mb-1">Sonic Stealth Pods</h3>
+<p class="text-xs text-on-surface-variant uppercase tracking-wider">Audio Engineering</p>
+</div>
+<span class="text-sm font-bold">$650</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- SideNavBar (Cart Drawer) -->
+<div class="fixed inset-0 z-[60] pointer-events-none overflow-hidden" id="cart-drawer">
+<div class="absolute inset-0 bg-background/80 backdrop-blur-sm opacity-0 transition-opacity duration-500"></div>
+<aside class="absolute right-0 top-0 h-screen w-full md:w-[450px] bg-[#0e0e0e] shadow-[-20px_0_60px_rgba(0,0,0,0.5)] translate-x-full transition-transform duration-500 flex flex-col font-manrope text-[#e2e2e2]">
+<div class="p-10 flex flex-col h-full">
+<div class="flex justify-between items-center mb-10">
+<div>
+<h2 class="text-xl font-bold text-[#e2e2e2]">Your Curator Bag</h2>
+<p class="text-xs text-[#e2e2e2]/50 uppercase tracking-widest mt-1">Exclusively selected items</p>
+</div>
+<button class="material-symbols-outlined hover:text-primary transition-colors" data-icon="close">close</button>
+</div>
+<div class="flex-1 overflow-y-auto custom-scrollbar pr-2">
+<div class="flex gap-4 mb-8">
+<div class="w-20 h-20 bg-surface-container rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Thumbnail of black chronograph watch" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLWFpPyBvQk6zMX5oCwxD3Z4EjQG7CGeInLWIJ-_tDm-HZ3bUj9b8ZzdCPGyDnLhxTIY99u99O30O7a7hKkGIEarMjPRwg9kAZptyqZamiOcZsPiKHQCpg7LxE4-x2-Ird-6hGu1vM6c1G9gW-iSwsbTiZHzCIKpZ6NLKwqVdVVAfuIdoYeHpWY3HZZnQDXm3k1TP4XNCymVUY4O2Tvhj6zUW1d0IKiIXNnPogE4lyraqo9yR1k0JEThdFX-JTdjP_wrLnC6JOiZg"/>
+</div>
+<div class="flex-1">
+<h4 class="text-sm font-bold">Temporal Black Chronograph</h4>
+<p class="text-xs text-[#e2e2e2]/40 mt-1">42mm / Titanium</p>
+<div class="flex justify-between items-end mt-2">
+<span class="text-primary font-bold">$1,240</span>
+<div class="flex items-center gap-3">
+<button class="text-xs hover:text-primary transition-colors">-</button>
+<span class="text-xs">1</span>
+<button class="text-xs hover:text-primary transition-colors">+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/10">
+<div class="flex justify-between items-center mb-6">
+<span class="text-sm uppercase tracking-widest text-[#e2e2e2]/40">Subtotal</span>
+<span class="text-lg font-bold">$1,240</span>
+</div>
+<button class="w-full py-4 rounded-lg bg-surface-container-highest text-primary font-bold text-sm uppercase tracking-widest hover:bg-surface-container-high transition-all">
+                        Proceed to Checkout
+                    </button>
+</div>
+</div>
+</aside>
+</div>
+<!-- Footer -->
+<footer class="bg-[#1b1b1b] py-20 px-8 tonal-shift-from-surface">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-lg font-black text-[#e2e2e2]">OBSIDIAN</div>
+<p class="text-xs tracking-widest uppercase text-[#e2e2e2]/40 max-w-xs leading-relaxed">
+                    Defining the boundary between precision engineering and editorial aesthetics. Curated for the few.
+                </p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<a class="block font-manrope text-xs tracking-widest uppercase text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Privacy</a>
+<a class="block font-manrope text-xs tracking-widest uppercase text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Terms</a>
+</div>
+<div class="space-y-4">
+<a class="block font-manrope text-xs tracking-widest uppercase text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Editorial</a>
+<a class="block font-manrope text-xs tracking-widest uppercase text-[#e2e2e2]/40 hover:text-green-500 transition-colors" href="#">Sustainability</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 text-[10px] tracking-widest text-[#e2e2e2]/20 text-center md:text-left">
+            © 2024 OBSIDIAN CURATOR. ALL RIGHTS RESERVED.
+        </div>
+</footer>
+<script>
+        function updateMainImage(element, src) {
+            const mainImg = document.getElementById('main-product-image');
+            
+            // Add a fade effect
+            mainImg.style.opacity = '0';
+            
+            setTimeout(() => {
+                mainImg.src = src;
+                mainImg.style.opacity = '1';
+                
+                // Update active state for thumbnails
+                document.querySelectorAll('.gallery-thumbnail').forEach(thumb => {
+                    thumb.classList.remove('active', 'border-primary', 'opacity-100');
+                    thumb.classList.add('border-transparent', 'opacity-50');
+                });
+                
+                element.classList.add('active', 'border-primary', 'opacity-100');
+                element.classList.remove('border-transparent', 'opacity-50');
+            }, 200);
+        }
+    </script>
+</body></html>
